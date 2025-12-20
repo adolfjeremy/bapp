@@ -1,0 +1,104 @@
+:root {
+	/* ===== Spacing ===== */
+	/* Base */
+	--space-2xs: 4px;
+	--space-xs: 8px;
+	--space-sm: 12px;
+	--space-md: 16px;
+
+	/* Golden ratio progression (conservative) */
+	--space-lg: 24px;   /* 16 × 1.5 */
+	--space-xl: 32px;   /* 24 × 1.33 */
+	--space-2xl: 48px;  /* 32 × 1.5 */
+	--space-3xl: 64px;  /* 48 × 1.33 */
+	--space-4xl: 96px;  /* 64 × 1.5 */
+	--space-5xl: 128px; /* section spacing */
+
+	--section-y: clamp(64px, 8vw, 120px);
+  	--section-x: clamp(16px, 5vw, 64px);
+
+
+
+	/* ===== Base ===== */
+	--font-body: clamp(15px, 0.9vw + 14px, 17px);
+
+	/* Ratio ~1.4–1.5 (soft golden) */
+	--font-sm: clamp(13px, 0.7vw + 12px, 14px);
+	--font-md: var(--font-body);
+	--font-lg: clamp(18px, 1.1vw + 16px, 20px);
+
+	--font-xl: clamp(24px, 1.8vw + 20px, 28px);
+	--font-2xl: clamp(32px, 2.4vw + 26px, 36px);
+	--font-3xl: clamp(40px, 3vw + 32px, 48px);
+
+	/* ===== Line Height ===== */
+	--lh-tight: 1.2;
+	--lh-normal: 1.55;
+	--lh-loose: 1.7;
+
+	/* Border Radius */
+	--radius-sm: 6px;
+	--radius-md: 8px;
+	--radius-lg: 12px;
+
+
+	/* Buttons */
+	/* Heights */
+	--btn-h-sm: 40px;
+	--btn-h-md: 48px;
+	--btn-h-lg: 56px;
+
+	/* Padding */
+	--btn-px-sm: 16px;
+	--btn-px-md: 24px;
+	--btn-px-lg: 32px;
+
+	/* Radius */
+	--btn-radius: 8px;
+	--btn-radius-md: 16px;
+
+	/* Font */
+	--btn-font-sm: var(--font-sm);
+	--btn-font-md: var(--font-md);
+	--btn-font-lg: var(--font-lg);
+
+
+	/* Color */
+	--color-primary: #018FF5;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	}
+
+
+
+	
+
+
+/*  typography */
+h1 {
+	font-size: var(--font-3xl);
+	line-height: var(--lh-tight);
+}
+
+h2 {
+	font-size: var(--font-2xl);
+	line-height: var(--lh-tight);
+}
+
+h3 {
+	font-size: var(--font-xl);
+	line-height: 1.25;
+}
+
+h4 {
+	font-size: var(--font-lg);
+}
+
+p {
+	font-size: var(--font-md);
+}
+
+small {
+	font-size: var(--font-sm);
+}
+/*  typography */
