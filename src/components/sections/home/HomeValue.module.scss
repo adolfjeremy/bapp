@@ -1,0 +1,39 @@
+.section {
+  padding: 0 0 var(--space-xl) 0;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gridHeading {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 720px) {
+        padding: var(--space-2xl) !important;
+    }
+    
+}
+
+.gridItem {
+    padding: var(--space-sm) 0;
+    @media screen and (max-width: 720px) {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+    h3,p {
+        text-align: center;
+    }
+  }
+    
+    h3 {
+        margin-bottom: var(--space-xs);
+    }
+}

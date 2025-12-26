@@ -1,5 +1,6 @@
 @use './variables';
 @use './layout';
+@use './mixins';
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
@@ -8,8 +9,17 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: var(--font-md);
   line-height: var(--lh-normal);
-   font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
+  color: var(--color-black);
+}
+
+p,h1,h2,h3,h4 {
+  margin: 0;
 }

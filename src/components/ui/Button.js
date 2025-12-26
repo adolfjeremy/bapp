@@ -1,4 +1,5 @@
 import "./button.scss";
+
 function Button({
   children,
   variant = "primary",

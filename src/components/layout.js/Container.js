@@ -1,8 +1,12 @@
-import React from "react";
+import styles from "./Container.module.scss";
 
-function Container({ children, as = "div" }) {
+function Container({ children, as = "div", variant = "center" }) {
   const Tag = as;
-  return <Tag className="container">{children}</Tag>;
+  return (
+    <Tag className={`${styles.container} ${styles[`container-${variant}`]}`}>
+      {children}
+    </Tag>
+  );
 }
 
 export default Container;

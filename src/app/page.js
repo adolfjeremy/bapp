@@ -1,60 +1,24 @@
-import Image from "next/image";
+import PageHero from "@/components/sections/PageHero";
+import HomeOverview from "@/components/sections/home/HomeOverview";
+import HomeValue from "@/components/sections/home/HomeValue";
 
 export default function Home() {
   return (
     <div>
       <main>
-        <Image
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+        <PageHero
+          titleDesktop="Trusted High Speed Diesel Supplier & Bunker Service Provider in Indonesia"
+          descriptionDesktop="PT. Bumi Asri Prima Pratama is a well-established company specializing in High Speed Diesel (HSD) and Marine Fuel Oil (MFO) trading, delivering reliable energy solutions for industrial, mining, and marine sectors since 2004."
+          titleMobile="Reliable Industrial Diesel & Bunker Fuel Solutions"
+          descriptionMobile="Serving industry, mining, and marine sectors since 2004."
+          ctaLabel="Contact Our Team"
+          ctaHref="/contact"
+          bgDesktop="/images/hero-home.png"
+          bgMobile="/images/hero-home-sm.png"
+          seoAlt="High Speed Diesel and Marine Fuel Supply by PT Bumi Asri Prima Pratama"
         />
-        <div>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div>
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        <HomeOverview />
+        <HomeValue />
       </main>
     </div>
   );

@@ -68,8 +68,8 @@ function Header() {
             <Image
               src="/images/logo-bapp.png"
               alt="PT Bumi Asri Pratama"
-              width={140}
-              height={71.6}
+              width={130}
+              height={61.6}
             />
           </Link>
           <nav className={styles.navDesktop}>
@@ -87,7 +87,7 @@ function Header() {
           </nav>
           <div className={styles.cta}>
             <Button size="sm" variant="primary" as={Link} href="/contact">
-              Lets Talk
+              Company Profile
             </Button>
           </div>
           <button
