@@ -1,4 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
+import ServiceList from "@/components/sections/ServiceList";
 import HomeOverview from "@/components/sections/home/HomeOverview";
 import HomeValue from "@/components/sections/home/HomeValue";
 
@@ -19,6 +20,7 @@ export default function Home() {
         />
         <HomeOverview />
         <HomeValue />
+        <ServiceList />
       </main>
     </div>
   );

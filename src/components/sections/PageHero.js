@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "../layout.js/Container";
 import Button from "@/components/ui/Button";
+import SeoImage from "../ui/SeoImage";
 import styles from "./PageHero.module.scss";
 import Link from "next/link";
 
@@ -23,15 +24,7 @@ function PageHero({
         "--bg-mobile": `url(${bgMobile})`,
       }}
     >
-      <Image
-        fill
-        src={bgDesktop}
-        alt={seoAlt}
-        className={styles.seoImage}
-        loading="eager"
-        fetchPriority="high"
-        decoding="async"
-      />
+      <SeoImage imageSrc={bgDesktop} seoAlt={seoAlt} />
       <Container>
         <div className={styles.content}>
           <h1 className={styles.title}>
