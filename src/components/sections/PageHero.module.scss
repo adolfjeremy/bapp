@@ -53,7 +53,7 @@
 }
 
 /* ---------- Small mobile (<400px) ---------- */
-@media (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 399px) {
   .hero {
     min-height: 55svh;
   }
@@ -64,7 +64,7 @@
   }
 
   .title {
-    font-size: var(--font-md);
+    font-size: var(--font-lg);
     line-height: 1.15;
   }
 
@@ -93,18 +93,32 @@
 /* ---------- Tablet ---------- */
 @media (min-width: 768px) {
   .hero {
-    min-height: 51svh;
+    min-height: 46svh;
   }
 
   .content {
     max-width: 75ch;
   }
 }
+/* ---------- Desktop ---------- */
+@media (min-width: 1000px) {
+  .hero {
+    min-height: 50svh;
+  }
+
+  .content {
+    max-width: 80ch;
+  }
+
+  .title {
+    font-size: var(--font-4xl);
+  }
+}
 
 /* ---------- Desktop ---------- */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .hero {
-    min-height: 51svh;
+    min-height: 100svh;
   }
 
   .content {

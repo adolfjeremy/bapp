@@ -8,6 +8,11 @@
   display: flex;
   align-items: center;
   padding: var(--space-3xl) 0;
+
+  @media (max-width: 600px) {
+    min-height: 80svh;
+  padding: var(--space-lg) 0;
+  }
 }
 
 .carouselWrapper {
