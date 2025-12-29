@@ -4,6 +4,7 @@ export default function SeoImage({ imageSrc, seoAlt }) {
   return (
     <Image
       fill
+      sizes="100svw"
       src={imageSrc}
       alt={seoAlt}
       className="seoImage"

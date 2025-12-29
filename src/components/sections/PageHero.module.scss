@@ -42,7 +42,6 @@
 }
 
 .title {
-  font-size: var(--font-xl);
   line-height: 1.1;
   color: #fff;
 }
@@ -64,7 +63,6 @@
   }
 
   .title {
-    font-size: var(--font-lg);
     line-height: 1.15;
   }
 
@@ -109,10 +107,6 @@
   .content {
     max-width: 80ch;
   }
-
-  .title {
-    font-size: var(--font-4xl);
-  }
 }
 
 /* ---------- Desktop ---------- */
@@ -125,7 +119,4 @@
     max-width: 80ch;
   }
 
-  .title {
-    font-size: var(--font-4xl);
-  }
 }

@@ -1,0 +1,19 @@
+.clientSection {
+    background-image: url('/images/blue-glows.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        text-align: center;
+    }
+    padding: var(--space-2xl) 0;
+}
+
+.clientList {
+    margin-top: var(--space-2xl);
+}

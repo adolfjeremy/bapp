@@ -1,7 +1,9 @@
+import ClientList from "@/components/sections/ClientList";
 import PageHero from "@/components/sections/PageHero";
 import ServiceList from "@/components/sections/ServiceList";
 import HomeOverview from "@/components/sections/home/HomeOverview";
 import HomeValue from "@/components/sections/home/HomeValue";
+import WhyChooseBAPP from "@/components/sections/home/WhyChooseBAPP";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
         <HomeOverview />
         <HomeValue />
         <ServiceList />
+        <ClientList />
+        <WhyChooseBAPP />
       </main>
     </div>
   );

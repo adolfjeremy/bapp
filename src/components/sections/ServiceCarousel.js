@@ -11,7 +11,6 @@ export default function ServiceCarousel() {
     arrows: false,
     speed: 500,
     swipeToSlide: true,
-
     slidesToShow: 1,
     centerMode: true, // ⬅️ WAJIB DI ROOT
     centerPadding: "64px", // ⬅️ DEFAULT (tablet-ish)

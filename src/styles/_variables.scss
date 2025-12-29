@@ -86,20 +86,33 @@
 h1 {
 	font-size: var(--font-3xl);
 	line-height: var(--lh-tight);
+	@media (max-width: 600px) {
+		font-size: var(--font-2xl);
+	}
 }
 
 h2 {
 	font-size: var(--font-2xl);
 	line-height: var(--lh-tight);
+	@media (max-width: 600px) {
+		font-size: var(--font-xl);
+	}
 }
 
 h3 {
-	font-size: var(--font-xl);
+	font-size: var(--font-lg);
 	line-height: 1.25;
+	@media (max-width: 600px) {
+		font-size: var(--font-lg);
+	}
 }
 
 h4 {
 	font-size: var(--font-lg);
+
+	@media (max-width: 600px) {
+		font-size: var(--font-md);
+	}
 }
 
 p {

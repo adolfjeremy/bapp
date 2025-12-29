@@ -1,0 +1,91 @@
+.whyChooseBAPPSection {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  background-image: url("/images/why-choose-us-bg.png");
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  align-items: center;
+  padding: var(--space-3xl) 0;
+
+  @media (max-width: 600px) {
+    min-height: 80svh;
+  padding: var(--space-lg) 0;
+  }
+  h2 {
+    color: var(--color-white);
+    text-align: center;
+    span {
+        color: var(--color-primary);
+    }
+  }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    
+    .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: var(--space-sm);
+    grid-template-areas:
+      "card1 card2 cta"
+      "wide  wide  cta";
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "card1 card2"
+        "wide  wide"
+        "cta   cta";
+    }
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "card1"
+        "card2"
+        "wide"
+        "cta";
+    }
+  }
+
+    .card-1 {
+        grid-area: card1;
+    }
+
+    .card-2 {
+        grid-area: card2;
+    }
+
+    .card-wide {
+        grid-area: wide;
+    }
+
+    .card-cta {
+        grid-area: cta;
+    }
+
+    .card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    }
+
+    .card-cta {
+    background: var(--color-primary);
+    color: #fff;
+    }
+}
