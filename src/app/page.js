@@ -1,4 +1,5 @@
 import ClientList from "@/components/sections/ClientList";
+import Cta from "@/components/sections/Cta";
 import PageHero from "@/components/sections/PageHero";
 import ServiceList from "@/components/sections/ServiceList";
 import HomeOverview from "@/components/sections/home/HomeOverview";
@@ -25,6 +26,7 @@ export default function Home() {
         <ServiceList />
         <ClientList />
         <WhyChooseBAPP />
+        <Cta />
       </main>
     </div>
   );
