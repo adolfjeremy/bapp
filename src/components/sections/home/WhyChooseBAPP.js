@@ -24,11 +24,12 @@ export default function WhyChooseBAPP() {
                 width={50}
                 height={50}
               />
-              <h3>Proven Industry Experience</h3>
+              <h3>Established Industry Experience</h3>
               <p>
-                With over two decades of experience, BAPP has built a strong
-                track record in supplying industrial and marine fuel solutions
-                for diverse operational requirements.
+                Established in 2004, BAPP has accumulated extensive experience
+                in supplying fuel solutions for industrial, mining, and marine
+                operations, supported by a solid understanding of operational
+                and regulatory requirements.
               </p>
             </div>
             <div className={`${styles.card} ${styles["card-2"]}`}>
@@ -38,11 +39,12 @@ export default function WhyChooseBAPP() {
                 width={50}
                 height={50}
               />
-              <h3>Integrated Energy Services</h3>
+              <h3>Integrated Fuel Services</h3>
               <p>
-                We offer end-to-end fuel solutions covering HSD and MFO supply,
-                bunker services, ship-to-ship operations, and floating storage
-                support—delivered through a single, reliable partner.
+                BAPP provides end-to-end fuel solutions covering High Speed
+                Diesel and Marine Fuel Oil supply, bunker services, ship-to-ship
+                operations, and floating storage support through a single,
+                coordinated service framework.
               </p>
             </div>
             <div className={`${styles.card} ${styles["card-wide"]}`}>
@@ -52,13 +54,13 @@ export default function WhyChooseBAPP() {
                 width={50}
                 height={50}
               />
-              <h3>Structured Operations & Nationwide Coverage</h3>
+              <h3>Operational Capability & Distribution Network</h3>
               <p>
-                BAPP operates through established infrastructure and nationwide
-                distribution networks, enabling efficient fuel delivery across
-                key industrial and maritime locations. Our operational framework
-                is designed to support supply continuity, logistical
-                coordination, and service consistency in demanding environments.
+                Our operations are supported by established infrastructure and
+                nationwide distribution coverage across key industrial and
+                maritime locations. This enables efficient coordination, supply
+                continuity, and consistent service delivery in complex operating
+                environments.
               </p>
             </div>
             <div className={`${styles.card} ${styles["card-cta"]}`}>
@@ -68,17 +70,18 @@ export default function WhyChooseBAPP() {
                 width={50}
                 height={50}
               />
-              <h3>A Partner Focused on Long-Term Reliability</h3>
+              <h3>A Dependable Partner for Long-Term Operations</h3>
               <p>
-                BAPP is trusted by industry leaders not only for operational
-                capability, but for a disciplined and professional approach to
-                long-term fuel supply. We emphasize consistency, compliance, and
-                clarity in every engagement.
+                BAPP is trusted by industry leaders for its disciplined approach
+                to fuel supply, emphasizing consistency, compliance, and
+                operational clarity. We focus on building stable partnerships
+                that support critical business activities over the long term.
               </p>
               <p>
-                For organizations that require a dependable partner to support
-                critical operations, BAPP provides a practical pathway to stable
-                and well-managed energy supply.
+                For organizations seeking a reliable fuel partner with a
+                structured and professional operating model, BAPP offers a
+                practical and dependable approach to meeting ongoing energy
+                supply requirements.
               </p>
               <Button href="/contact" variant="secondary" size="sm">
                 Contact Us
