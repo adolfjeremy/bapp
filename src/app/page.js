@@ -1,3 +1,4 @@
+import ServiceSwiper from "@/components/layout.js/ServiceSwiper";
 import ClientList from "@/components/sections/ClientList";
 import Cta from "@/components/sections/Cta";
 import PageHero from "@/components/sections/PageHero";
@@ -11,19 +12,20 @@ export default function Home() {
     <div>
       <main>
         <PageHero
-          titleDesktop="Trusted High Speed Diesel Supplier & Bunker Service Provider in Indonesia"
-          descriptionDesktop="PT. Bumi Asri Prima Pratama is a well-established company specializing in High Speed Diesel (HSD) and Marine Fuel Oil (MFO) trading, delivering reliable energy solutions for industrial, mining, and marine sectors since 2004."
-          titleMobile="Reliable Industrial Diesel & Bunker Fuel Solutions"
-          descriptionMobile="Serving industry, mining, and marine sectors since 2004."
-          ctaLabel="Contact Our Team"
+          titleDesktop="Rising stronger with renewed energy"
+          descriptionDesktop="Our journey has shaped us to become more resilient, innovative, and ready for a new era of growth"
+          titleMobile="Rising stronger with renewed energy"
+          descriptionMobile="Our journey has shaped us to become more resilient, innovative, and ready for a new era of growth"
+          ctaLabel="Contact us"
           ctaHref="/contact"
           bgDesktop="/images/hero-home.png"
-          bgMobile="/images/hero-home-sm.png"
+          bgMobile="/images/hero-home.png"
           seoAlt="High Speed Diesel and Marine Fuel Supply by PT Bumi Asri Prima Pratama"
         />
         <HomeOverview />
         <HomeValue />
         <ServiceList />
+        {/* <ServiceSwiper /> */}
         <ClientList />
         <WhyChooseBAPP />
         <Cta />

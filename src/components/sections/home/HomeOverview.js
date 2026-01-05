@@ -10,25 +10,19 @@ export default function HomeOverview() {
       <Container>
         <div className={styles.inner}>
           <div className={styles.content}>
-            <h2 className={styles.title}>Leading Fuel Supplier Since 2004</h2>
-
+            <h2 className={styles.title}>
+              Continuing a legacy together <br /> for our future.
+            </h2>
             <p className={styles.description}>
-              PT. Bumi Asri Prima Pratama (BAPP) is an{" "}
-              <span>Indonesian energy trading company</span> established in
-              2004, specializing in the supply and distribution of High Speed
-              Diesel (HSD) and Marine Fuel Oil (MFO). As a business unit of PT.
-              Pelaksana Jaya Mulia, BAPP serves industrial, mining,
-              transportation, and marine sectors with reliable fuel solutions
-              for both domestic and international operations.
-            </p>
-            <p className={styles.description}>
-              With integrated services including fuel trading, bunker services,
-              ship-to-ship (STS) operations, and floating storage unit (FSU)
-              solutions, BAPP is supported by strong infrastructure and
-              nationwide distribution networks. We are committed to delivering
-              consistent product quality, operational efficiency, and service
-              excellence to support our clients' critical energy needs across
-              Indonesia.
+              Established in 2004,{" "}
+              <span>
+                we have built a strong track record by aligning collaboration,
+                execution, and a shared strategic purpose.{" "}
+              </span>
+              Through multiple market cycles, we have developed a resilient
+              platform—powered by the energy of the next generation and the
+              experience of seasoned leadership—to scale as a leading energy
+              supplier in Indonesia.
             </p>
 
             <Button as={Link} href="/about" size="sm">

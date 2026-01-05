@@ -1,5 +1,6 @@
 import "@/styles/global.scss";
 import Header from "@/components/layout.js/Header";
+import Footer from "@/components/layout.js/Footer";
 
 export const metadata = {
   title: "PT Bumi Asri Pratama",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

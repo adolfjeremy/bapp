@@ -1,39 +1,167 @@
 .section {
-  padding: 0 0 var(--space-xl) 0;
-}
-.gridContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-lg);
+  padding: var(--space-3xl) 200px;
+  min-height: 75svh;
+  color: var(--color-white);
+  overflow: hidden;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-3xl);
 
-  @media screen and (max-width: 720px) {
-    grid-template-columns: 1fr;
+  @media (max-width: 600px) {
+    padding: var(--space-3xl) var(--space-sm);
   }
 }
 
-.gridHeading {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @media screen and (max-width: 720px) {
-        padding: var(--space-2xl) !important;
-    }
-    
-}
+/* IMPORTANT for centerMode */
+  .slick-list {
+    overflow: visible;
+  }
 
-.gridItem {
-    padding: var(--space-sm) 0;
-    @media screen and (max-width: 720px) {
-    padding-left: var(--space-lg);
-    padding-right: var(--space-lg);
-    h3,p {
-        text-align: center;
+  .slick-slide {
+    width: fit-content !important;
+  }
+
+.iconSlide {
+  display: flex;
+  justify-content: center;
+  width: fit-content !important;
+  opacity: 0.45;
+  margin-bottom: var(--space-xl);
+  transition:
+    transform 0.45s ease,
+    opacity 0.45s ease,
+    background 0.45s ease;
+  svg {
+    width: 112px;
+    height: 112px;
+    @media (max-width: 600px) {
+      width: 500px;
+      height: 50px;
     }
   }
-    
-    h3 {
-        margin-bottom: var(--space-xs);
+}
+
+
+
+.active {
+  opacity: 1;
+  svg {
+    width: 168px;
+    height: 168px;
+    @media (max-width: 600px) {
+      width: 90px;
+      height: 90px;
     }
+  }
+}
+
+
+/* ================= TEXT ================= */
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 60ch;
+  gap: var(--space-xs);
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+  animation: fadeUp 0.45s ease both;
+
+  h3 {
+    font-size: var(--font-2xl);
+    font-weight: 600;
+    color: var(--color-black);
+    @media (max-width: 600px) {
+      font-size: var(--font-xl);
+    }
+  }
+
+  p {
+    line-height: 1.7;
+    min-height: 8ch;
+    color: var(--color-black);
+    @media (max-width: 600px) {
+      min-height: 15ch;
+    }
+  }
+}
+
+.controls {
+  margin-top: var(--space-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xl);
+}
+
+/* ================= ARROWS ================= */
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  color: var(--color-white);
+  font-size: var(--font-xl);
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  svg {
+    font-size: var(--font-xl);
+  }
+}
+
+/* ================= DOTS ================= */
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-white);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.activeDot {
+  background: var(--color-black);
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

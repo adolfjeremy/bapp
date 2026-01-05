@@ -2,10 +2,6 @@
     display: block;
     padding-block: var(--space-2xl);
     color: var(--color-black);
-    background-image: url("/images/shadow-bg.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
 }
 
 .container {
@@ -32,7 +28,7 @@
     gap: var(--space-sm); 
     span {
         color: var(--color-primary);
-        font-weight: 600;
+        font-weight: 500;
     }
 
 @media screen and (max-width: 821) {

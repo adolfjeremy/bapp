@@ -46,6 +46,7 @@
 	--radius-sm: 6px;
 	--radius-md: 8px;
 	--radius-lg: 12px;
+	--radius-xl: 18px;
 
 
 	/* Buttons */
@@ -71,8 +72,9 @@
 
 	/* Color */
 	--color-primary: #018FF5;
-	--color-white: #ffffff;
-	--color-black: #000000;
+	--color-white: #F8FAFC;
+	--color-black: #0F172A;
+	--color-secondaryDark : #1E293B;
 
 	--container-width: 1200px;
 	}
@@ -86,6 +88,7 @@
 h1 {
 	font-size: var(--font-3xl);
 	line-height: var(--lh-tight);
+	text-transform: capitalize;
 	@media (max-width: 600px) {
 		font-size: var(--font-2xl);
 	}
@@ -94,6 +97,7 @@ h1 {
 h2 {
 	font-size: var(--font-2xl);
 	line-height: var(--lh-tight);
+	text-transform: capitalize;
 	@media (max-width: 600px) {
 		font-size: var(--font-xl);
 	}

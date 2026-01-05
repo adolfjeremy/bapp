@@ -16,4 +16,7 @@
     justify-content: center;
     gap: var(--space-md);
     color: var(--color-white);
+    h2,p {
+        text-align: center;
+    }
 }

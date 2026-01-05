@@ -3,7 +3,7 @@ import Container from "../layout.js/Container";
 import ServiceItem from "./ServiceItem";
 import styles from "./ServiceList.module.scss";
 import SeoImage from "../ui/SeoImage";
-import ServiceCarousel from "./ServiceCarousel";
+import ServiceSwiper from "../layout.js/ServiceSwiper";
 
 function ServiceList() {
   return (
@@ -39,7 +39,7 @@ function ServiceList() {
           </div>
         </div>
         <div className={styles.carouselWrapper}>
-          <ServiceCarousel />
+          <ServiceSwiper />
         </div>
       </Container>
     </section>

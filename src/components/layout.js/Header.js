@@ -68,8 +68,8 @@ function Header() {
             <Image
               src="/images/logo-bapp.png"
               alt="PT Bumi Asri Pratama"
-              width={130}
-              height={61.6}
+              width={120}
+              height={55}
             />
           </Link>
           <nav className={styles.navDesktop}>

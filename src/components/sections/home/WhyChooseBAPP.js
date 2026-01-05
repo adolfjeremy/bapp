@@ -8,7 +8,7 @@ export default function WhyChooseBAPP() {
   return (
     <section className={styles.whyChooseBAPPSection}>
       <SeoImage
-        imageSrc="/images/why-choose-bapp.png"
+        imageSrc="/images/why-choose-us-bg.png"
         seoAlt="Cargo vessel at port terminal representing marine fuel supply and bunker service operations."
       />
       <Container>
@@ -24,58 +24,52 @@ export default function WhyChooseBAPP() {
                 width={50}
                 height={50}
               />
-              <h3>Established Industry Experience</h3>
+              <h3>Distribution Project</h3>
               <p>
-                Established in 2004, BAPP has accumulated extensive experience
-                in supplying fuel solutions for industrial, mining, and marine
-                operations, supported by a solid understanding of operational
-                and regulatory requirements.
+                With our oil tankers and fuel transport trucks, we are equipped
+                to provide reliable energy distribution across all areas.
               </p>
             </div>
             <div className={`${styles.card} ${styles["card-2"]}`}>
               <Image
-                src="/images/icons/sprout.svg"
+                src="/images/icons/oil-tank.svg"
                 alt="Sprout Icon"
                 width={50}
                 height={50}
               />
-              <h3>Integrated Fuel Services</h3>
+              <h3>Oil Storage Solutions</h3>
               <p>
-                BAPP provides end-to-end fuel solutions covering High Speed
-                Diesel and Marine Fuel Oil supply, bunker services, ship-to-ship
-                operations, and floating storage support through a single,
-                coordinated service framework.
+                With a 150,000-kiloliter oil storage facility in Aceh, we
+                guarantee energy supply reliability while supporting the storage
+                of local and imported fuels.
               </p>
             </div>
             <div className={`${styles.card} ${styles["card-wide"]}`}>
               <Image
-                src="/images/icons/goal.svg"
+                src="/images/icons/tube.svg"
                 alt="Goal Icon"
                 width={50}
                 height={50}
               />
-              <h3>Operational Capability & Distribution Network</h3>
+              <h3>Research & Development Program</h3>
               <p>
-                Our operations are supported by established infrastructure and
-                nationwide distribution coverage across key industrial and
-                maritime locations. This enables efficient coordination, supply
-                continuity, and consistent service delivery in complex operating
-                environments.
+                Equipped with cutting-edge laboratories and manufacturing units,
+                we are committed to rigorous fuel testing and the long-term
+                innovation of alternative energy sources
               </p>
             </div>
             <div className={`${styles.card} ${styles["card-cta"]}`}>
               <Image
-                src="/images/icons/people.svg"
+                src="/images/icons/ship.svg"
                 alt="People Icon"
                 width={50}
                 height={50}
               />
-              <h3>A Dependable Partner for Long-Term Operations</h3>
+              <h3>Oil bunker services</h3>
               <p>
-                BAPP is trusted by industry leaders for its disciplined approach
-                to fuel supply, emphasizing consistency, compliance, and
-                operational clarity. We focus on building stable partnerships
-                that support critical business activities over the long term.
+                We are dedicated to ensuring energy access for fishermen and
+                fostering local economic development through comprehensive
+                bunker and retail operations
               </p>
               <p>
                 For organizations seeking a reliable fuel partner with a
