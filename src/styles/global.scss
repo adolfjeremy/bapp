@@ -58,6 +58,10 @@ p,h1,h2,h3,h4,a {
   justify-content: flex-start;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .align-start {
   align-items: start;
 }
@@ -96,4 +100,8 @@ p,h1,h2,h3,h4,a {
 
 .bg-primary {
   background-color: var(--color-primary);
+}
+
+.position-relative {
+  position: relative;
 }

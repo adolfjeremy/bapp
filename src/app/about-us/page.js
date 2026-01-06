@@ -1,4 +1,3 @@
-import React from "react";
 import PageHero from "@/components/sections/PageHero";
 import Journey from "@/components/sections/about/Journey";
 import VIsionMission from "@/components/sections/about/VIsionMission";

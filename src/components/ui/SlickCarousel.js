@@ -15,7 +15,7 @@ export default function SlickCarousel() {
               src="/images/clients/logo-pin.png"
               alt="Client 1 Logo"
               width={170}
-              height={41}
+              height={55}
             />
           </div>
           <div className={styles.marqueeGap}>
