@@ -1,0 +1,110 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Team {
+  id       Int     @id @default(autoincrement())
+  name     String
+  position String
+  photo    String
+  order    Int     @default(0)
+  isActive Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Service {
+  id               Int     @id @default(autoincrement())
+  title            String
+  shortDescription String
+  longDescription  String
+  thumbnail        String
+  image            String
+  order            Int     @default(0)
+  isActive         Boolean @default(true)
+
+  seo ServiceSeo?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Page {
+  id    Int    @id @default(autoincrement())
+  key   String @unique
+  title String
+
+  seo PageSeo?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+//
+// SEO MODELS
+//
+
+model PageSeo {
+  id              Int     @id @default(autoincrement())
+  metaTitle       String
+  metaDescription String
+  slug            String  @unique
+  ogImage         String?
+
+  pageId Int  @unique
+  page   Page @relation(fields: [pageId], references: [id])
+}
+
+model ServiceSeo {
+  id              Int     @id @default(autoincrement())
+  metaTitle       String
+  metaDescription String
+  slug            String  @unique
+  ogImage         String?
+
+  serviceId Int     @unique
+  service   Service @relation(fields: [serviceId], references: [id])
+}
+
+model AdminUser {
+  id       Int       @id @default(autoincrement())
+  email    String    @unique
+  password String
+  name     String
+  role     AdminRole @default(ADMIN)
+  isActive Boolean   @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  adminSessions AdminSession[]
+}
+
+//session
+
+model AdminSession {
+  id        String   @id @default(cuid())
+  userId    Int
+  expiresAt DateTime
+
+  user AdminUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+enum AdminRole {
+  ADMIN
+  EDITOR
+}

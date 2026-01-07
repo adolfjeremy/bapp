@@ -9,7 +9,11 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "bcrypt": "^6.0.0",
     "next": "16.1.0",
+    "next-auth": "^5.0.0-beta.30",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-fast-marquee": "^1.6.5",
@@ -20,7 +24,9 @@
     "swiper": "^12.0.3"
   },
   "devDependencies": {
+    "dotenv": "^17.2.3",
     "eslint": "^9",
-    "eslint-config-next": "16.1.0"
+    "eslint-config-next": "16.1.0",
+    "prisma": "^7.2.0"
   }
 }

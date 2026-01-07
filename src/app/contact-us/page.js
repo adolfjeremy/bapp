@@ -2,8 +2,10 @@ import PageHero from "@/components/sections/PageHero";
 import ClientList from "@/components/sections/ClientList";
 import Cta from "@/components/sections/Cta";
 import ContactForm from "@/components/sections/contact/ContactForm";
+import prisma from "@/lib/prisma";
 
-export default function Services() {
+export default async function Services() {
+  const services = await prisma.service.findMany();
   return (
     <div>
       <main>
@@ -21,6 +23,11 @@ export default function Services() {
         <ClientList />
         <ContactForm />
         <Cta />
+        <div>
+          {services.map((service) => (
+            <p key={service.id}>{service.title}</p>
+          ))}
+        </div>
       </main>
     </div>
   );
